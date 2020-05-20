@@ -1,0 +1,122 @@
+/* Inspired by https://codepen.io/AlxCrmr/pen/XRLKZY?editors=0110 */
+
+body {
+  background: gray;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background: #1175FF;
+  border-radius: 50px;
+}
+
+.circle {
+  width: 230px;
+  height: 230px;
+  background-color: #1175FF;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.line {
+  width: 160px;
+  height: 30px;
+  background: white;
+  position: relative;
+  top: 115px;
+  left: 40px;
+}
+
+.pencil-main {
+  width: 90px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #1175FF;
+  position: relative;
+  top: 70px;
+  left: 35px;
+  z-index: 9;
+  transform: rotate(-60deg);
+}
+
+.pencil-tip {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid white;
+  position: relative;
+  top: 98px;
+  left: 43px;
+  z-index: 9;
+  transform: rotate(-60deg);
+}
+
+.pencil-eraser1 {
+  width: 10px;
+  height: 20px;
+  background: white;
+  border: 2px solid #1175FF;
+  position: relative;
+  bottom: 19px;
+  left: 101px;
+  z-index: 9;
+  transform: rotate(-60deg);
+}
+
+.pencil-eraser2 {
+  width: 10px;
+  height: 20px;
+  background: white;
+  border: 2px solid #1175FF;
+  border-radius: 0 50% 50% 0;
+  position: relative;
+  bottom: 54px;
+  left: 107px;
+  z-index: 9;
+  transform: rotate(-60deg);
+}
+
+.brush-handle {
+  width: 130px;
+  height: 15px;
+  background: white;
+  border: 2px solid #1175FF;
+  position: relative;
+  border-radius: 50% 0 0 50%;
+  bottom: 60px;
+  left: 78px;
+  z-index: 9;
+  transform: rotate(60deg);
+}
+
+.brush-mid {
+  width: 10px;
+  height: 15px;
+  background: white;
+  border: solid #1175FF;
+  border-width: 2px 2px 2px 3px;
+  position: relative;
+  bottom: 15px;
+  left: 175px;
+  z-index: 9;
+  transform: rotate(60deg);
+}
+
+.brush-tip {
+  width: 30px;
+  height: 15px;
+  background: white;
+  border: 2px solid #1175FF;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 0 50% 50% 0;
+  position: relative;
+  bottom: 14px;
+  left: 177px;
+  z-index: 9;
+  transform: rotate(60deg);
+}
